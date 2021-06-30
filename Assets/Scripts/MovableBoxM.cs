@@ -18,7 +18,7 @@ public class MovableBoxM : MonoBehaviour
         
     }
 
-    void OnMouseDrag()
+    void OnMouseDrag()                      //箱の移動処理
     {
         if(gameManager.GetComponent<GameManager>().isBallMoving == false){
             float x = Input.mousePosition.x;

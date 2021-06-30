@@ -16,18 +16,18 @@ public class BallManager : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D coll)
+    void OnCollisionEnter2D(Collision2D coll)       //ボールが衝突した処理
     {
-        if(coll.gameObject.tag == "OutArea")
+        if(coll.gameObject.tag == "OutArea")        //タグ「OutArea」の処理
         {
             GameObject gameManager = GameObject.Find("GameManager");
             gameManager.GetComponent<GameManager>().PushRetryButton();
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)         //ボールが衝突した処理
     {
-        if(other.gameObject.tag == "ClearArea")
+        if(other.gameObject.tag == "ClearArea")     //タグ「ClearArea」の処理
         {
             GameObject gameManager = GameObject.Find("GameManager");
             gameManager.GetComponent<GameManager>().StageClear();

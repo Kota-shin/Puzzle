@@ -1319,7 +1319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd04ddbaf19a814e9edff625ca7d921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StageNum: 1
+  StageNum: 0
   isBallMoving: 0
   ballPrefab: {fileID: 6032399094110456443, guid: 93702784c5a3d304c9201349f6d0fa39,
     type: 3}

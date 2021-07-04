@@ -53,4 +53,9 @@ public class GameManager : MonoBehaviour
         retryButton.SetActive(false);
     }
 
+    public void PushBackButton()
+    {
+
+    }
+
 }

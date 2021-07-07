@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -53,9 +54,14 @@ public class GameManager : MonoBehaviour
         retryButton.SetActive(false);
     }
 
-    public void PushBackButton()
+    public void PushBackButton()                //バックボタン（ステージ選択画面へ行く）処理
     {
+        GobackStageSelect();
+    }
 
+    void GobackStageSelect()                    //ステージ選択画面へ行く処理
+    {
+        SceneManager.LoadScene("PuzzleSelectScene");
     }
 
 }
